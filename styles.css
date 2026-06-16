@@ -954,6 +954,39 @@ footer {
   line-height: 1.7;
 }
 
+/* College program logo grid */
+.college-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.college-tile {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background-color: var(--color-surface);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.college-tile img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .college-logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 @media (max-width: 768px) {
   .stats-row {
     grid-template-columns: repeat(2, 1fr);
@@ -962,5 +995,88 @@ footer {
   .process-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+  }
+}
+
+/* =============================================
+   EDITING & DESIGN PAGES
+============================================= */
+
+/* Tools grid — 2x2 */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background-color: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.tool-item {
+  background-color: var(--color-bg);
+  padding: 2rem;
+  transition: background-color 0.2s ease;
+}
+
+.tool-item:hover {
+  background-color: var(--color-surface);
+}
+
+.tool-name {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.tool-desc {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+/* Video embed — 16:9 responsive wrapper */
+.video-embed-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.video-embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.video-placeholder p:first-child {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
   }
 }
