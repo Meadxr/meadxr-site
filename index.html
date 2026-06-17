@@ -16,14 +16,14 @@
        NAV
   ============================================= -->
   <nav>
-    <!-- Replace YOUR NAME with your name. The <span> makes the dot accent-colored. -->
-    <a href="#hero" class="nav-logo">
-      <img src="images/logo.svg" alt="Meadxr logo" class="nav-logo-icon" />
-      Michael Meador<span>.</span>
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.svg" alt="Home" class="nav-logo-icon"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
+      <span class="nav-logo-text" style="display:none;">HOME</span>
     </a>
 
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="coaching.html">Coaching</a></li>
       <li><a href="editing.html">Editing</a></li>
       <li><a href="design.html">Design</a></li>
@@ -176,76 +176,19 @@
 
 
   <!-- =============================================
-       ABOUT
+       ABOUT — teaser, links to about.html
   ============================================= -->
-  <section class="about" id="about">
-    <div class="about-inner">
-
-      <div class="about-text">
+  <section class="section-block" id="about">
+    <div class="section-block-inner">
+      <div class="section-block-header">
         <p class="section-eyebrow">About</p>
         <h2 class="section-heading">A bit about me</h2>
-
-        <p>
-          I'm Michael — a designer, content creator, and esports coach based in Denton, TX,
-          with over 5 years of competitive experience across Overwatch, VALORANT, and Deadlock.
-          That background reaching the highest ranks in multiple FPS titles gave me a
-          ground-level understanding of what it actually takes to improve.
-        </p>
-        <p>
-          Since 2023 I've channeled that into coaching through
-          <a href="https://epa.gg/our-coaches/michael-meadxr-meador/" target="_blank" rel="noopener" class="inline-link">EPA.gg</a>,
-          working with collegiate programs and individual players. On the creative side, I'm
-          self-taught across the Adobe suite — Premiere Pro, Photoshop, and After Effects —
-          editing for creators and managing social media for esports organizations.
-        </p>
-        <p>
-          I'm finishing a BBA in Marketing at the University of North Texas, and I'm building
-          toward a career that connects all of it — the competitive knowledge, the creative work,
-          and the marketing background.
+        <p class="section-desc">
+          Austin-raised, now based in Denton, TX — 10 years of competitive FPS experience,
+          self-taught across the Adobe suite, and finishing a BBA in Marketing at UNT.
         </p>
       </div>
-
-      <!-- Credentials: real work, real numbers -->
-      <div class="about-credentials">
-
-        <p class="credentials-label">Who I've worked with</p>
-
-        <div class="credential-item">
-          <div class="credential-header">
-            <span class="credential-name">SamitoFPS</span>
-            <a href="https://www.youtube.com/@SamitoFPS" target="_blank" rel="noopener" class="credential-link">YouTube ↗</a>
-          </div>
-          <p class="credential-desc">
-            Part-time editor — 10+ videos, with individual videos reaching 150K and 210K+ views.
-            Edited highlight montages, full gameplay matches, and streamer reactions.
-          </p>
-        </div>
-
-        <div class="credential-item">
-          <div class="credential-header">
-            <span class="credential-name">UNT Esports</span>
-            <a href="https://twitter.com/UNTEsports" target="_blank" rel="noopener" class="credential-link">Twitter ↗</a>
-          </div>
-          <p class="credential-desc">
-            Media Manager — led social brand accounts across Twitter, YouTube, and Twitch
-            for the University of North Texas esports program.
-          </p>
-        </div>
-
-        <div class="credential-item">
-          <div class="credential-header">
-            <span class="credential-name">EPA.gg</span>
-            <a href="https://epa.gg" target="_blank" rel="noopener" class="credential-link">EPA.gg ↗</a>
-          </div>
-          <p class="credential-desc">
-            Esports Coach since October 2023 — coordinated with 3 collegiate programs,
-            coached 6 teams across 2 titles. Led one university to Conference Champions
-            and another to Nationals.
-          </p>
-        </div>
-
-      </div>
-
+      <a href="about.html" class="btn-primary">Read My Full Story</a>
     </div>
   </section>
 
@@ -260,12 +203,12 @@
         <!-- Left: name + tagline -->
         <div class="footer-brand">
           <p class="footer-logo">Michael Meador<span>.</span></p>
-          <p class="footer-tagline">Designer · Creator · Coach</p>
+          <p class="footer-tagline">Coach · Editor · Creator</p>
         </div>
 
         <!-- Right: nav links repeated for convenience -->
         <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="#about">About</a>
+          <a href="about.html">About</a>
           <a href="coaching.html">Coaching</a>
           <a href="editing.html">Editing</a>
           <a href="design.html">Design</a>

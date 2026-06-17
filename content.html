@@ -12,11 +12,12 @@
   <!-- NAV -->
   <nav>
     <a href="index.html" class="nav-logo">
-      <img src="images/logo.svg" alt="Meadxr logo" class="nav-logo-icon" />
-      Michael Meador<span>.</span>
+      <img src="images/logo.svg" alt="Home" class="nav-logo-icon"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';" />
+      <span class="nav-logo-text" style="display:none;">HOME</span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html#about">About</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="coaching.html">Coaching</a></li>
       <li><a href="editing.html">Editing</a></li>
       <li><a href="design.html">Design</a></li>
@@ -76,19 +77,6 @@
         </div>
       </div>
 
-      <!-- FEATURED VIDEO EMBED
-           Replace VIDEO_ID with a real YouTube video ID from your main channel
-           To find it: go to the video → the ID is in the URL after ?v= -->
-      <div class="video-embed-wrapper" style="margin-top: 2.5rem;">
-        <div class="video-placeholder">
-          <p>📹</p>
-          <p>Featured video — replace this with a YouTube embed</p>
-          <p style="font-size:0.75rem; margin-top:0.5rem; opacity:0.6;">
-            &lt;iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen&gt;&lt;/iframe&gt;
-          </p>
-        </div>
-      </div>
-
     </div>
   </section>
 
@@ -97,24 +85,17 @@
   <section class="section-block">
     <div class="section-block-inner">
 
-      <div class="section-block-header">
-        <p class="section-eyebrow">Twitch</p>
-        <h2 class="section-heading">Live on meadxr_</h2>
-        <p class="section-desc">
-          Live gameplay and variety streams on Twitch. Mostly Overwatch, with
-          whatever else is worth playing at the time.
-          <!-- UPDATE: Add stream schedule or any other live stream details here -->
-        </p>
-      </div>
+      <p class="section-eyebrow">Twitch</p>
 
-      <div class="channels-list">
-        <div class="channel-item">
-          <div class="channel-info">
-            <span class="channel-name">meadxr_</span>
-            <span class="channel-desc">Live gameplay, ranked sessions, and variety content</span>
-          </div>
-          <a href="https://twitch.tv/meadxr_" target="_blank" rel="noopener" class="channel-link">Twitch ↗</a>
-        </div>
+      <!-- Live Twitch embed for meadxr_. Shows live stream when online,
+           Twitch's own offline screen when not. The parent param must match
+           your actual domain once live (e.g. meadxr.github.io) or the embed
+           will refuse to load due to Twitch's embed security. -->
+      <div class="video-embed-wrapper" style="margin-top: 1rem;">
+        <iframe
+          src="https://player.twitch.tv/?channel=meadxr_&parent=meadxr.github.io&muted=true"
+          allowfullscreen>
+        </iframe>
       </div>
 
     </div>
@@ -170,7 +151,7 @@
           <p class="footer-tagline">Coach · Editor · Creator</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
-          <a href="index.html#about">About</a>
+          <a href="about.html">About</a>
           <a href="coaching.html">Coaching</a>
           <a href="editing.html">Editing</a>
           <a href="design.html">Design</a>
